@@ -1,0 +1,24 @@
+[
+  {
+  "PropertyGroupId": "kinesis.analytics.flink.run.options",
+  "PropertyMap": {
+    "python": "GettingStarted/getting-started.py",
+    "jarfile": "GettingStarted/lib/flink-sql-connector-kinesis-4.1.0-1.17.jar,flink-connector-aws-kinesis-firehose-4.1.0-1.17.jar"
+   }
+  },
+  {
+    "PropertyGroupId": "consumer.config.0",
+    "PropertyMap": {
+      "input.stream.name": "martucci-kinesis-stream-firehose",
+      "flink.stream.initpos": "LATEST",
+      "aws.region": "us-east-1"
+    }
+  },
+  {
+    "PropertyGroupId": "producer.config.0",
+    "PropertyMap": {
+      "output.stream.name": "martucci-kinesis-destination",
+      "aws.region": "us-east-1"
+    }
+  }
+]
